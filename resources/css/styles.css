@@ -37,6 +37,27 @@ html, body{
 	background-position: center;
 }
 
+#md-est a{
+	color: #FFF;
+	text-decoration: none;
+}
+#md-est a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+#md-est a:focus{
+	color: #FFF;
+	text-decoration: none;
+}
+#md-est a:hover{
+	color: #FFF;
+	text-decoration: underline;
+}
+#md-est a:active{
+	color: #FFF;
+	text-decoration: none;
+}
+
 #md-group p{
 	margin-left: 15px;
 }
@@ -74,6 +95,14 @@ html, body{
 
 #md-pdf > a:focus{
 	text-decoration: none;
+}
+
+#md-team{
+	display: flex;
+}
+
+.md-team{
+	width: 50%;
 }
 
 #md-video{

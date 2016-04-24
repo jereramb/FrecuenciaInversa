@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>NASA App Challenge</title>
 	<link rel="stylesheet" href="resources/css/styles.css">
+  <script src="resources/js/chartist.min.js"></script>
 </head>
 <body>
 	<div id="md-background" class="full-page">
@@ -167,44 +168,54 @@
 	<div class="full-page" style="background: #29B6F6; padding: 10vh 0; height: auto;">
 		<div id="map" class="container"></div>
 	</div>
-	<div id="md-est" class="full-page" style="background: #673AB7">
+	<div id="md-est" class="full-page" style="background: #673AB7; height: auto !important">
 		<div id="md-app" class="container">
-			<div class="md-app-item">
-				<img src="resources/images/Tosimetro.jpg" alt="Tosimetro">
-			</div>
-			<div class="md-app-item">
-				<p style="width: 100%; text-align: center;font-size: 32px;color: #FFF">Baja nuestra App desde el Play Store!</p>
-				<div style="height: 220px; width: 220px; margin: 0 auto;">
-					<img src="resources/images/GooglePlay.png" alt="Google Play">
-					<button class="btn btn-default" style="margin-left: 30%;">Descargar</button>
-				</div>
-			</div>
+      <div class="md-app-item">
+        <img src="resources/images/Tosimetro.jpg" alt="Tosimetro" style="box-shadow: 1px 0px 15px 0px rgba(255, 255, 255, 0.75);">
+      </div>
+      <div class="md-app-item">
+        <img src="resources/images/tosimetroApp.jpg" alt="Tosimetro App" style="box-shadow: 1px 0px 15px 0px rgba(255, 255, 255, 0.75);">
+      </div>
 		</div>
+    <div class="md-chart container"></div>
+    <p style="width: 100%; text-align: center;font-size: 32px;color: #FFF; margin: 0px !important; padding-bottom: 10px">
+      <a href="#">Baja nuestra App desde el Play Store!</a>
+      <img src="resources/images/GooglePlay.png" alt="Google Play" width="30px" height="30px">
+    </p>
 	</div>
   <div id="md-group" class="full-page" style="background: #123AB7; color: #FFF;">
     <div class="container">
-      <h1>Integrantes del equipo:</h1>
-      <p>Almada, Juan Cruz</p>
-      <p> Bosch, Diego</p>
-      <p>García, Agustín</p>
-      <p>Horst, Tomás</p>
-      <p>Minuto, Gabriela</p>
-      <p>Navoni, Federico</p>
-      <p>Ramb, Jeremías</p>
-      <p>Riquero, Juan José</p>
-      <p>Seliman, Ramiro</p>
-      <p>Turchet, Jeremías</p>
+      <div id="md-team">
+        <div class="md-team">
+          <h1>Integrantes del equipo:</h1>
+          <p>Almada, Juan Cruz</p>
+          <p> Bosch, Diego</p>
+          <p>García, Agustín</p>
+          <p>Horst, Tomás</p>
+          <p>Minuto, Gabriela</p>
+          <p>Navoni, Federico</p>
+          <p>Ramb, Jeremías</p>
+          <p>Riquero, Juan José</p>
+          <p>Seliman, Ramiro</p>
+          <p>Turchet, Jeremías</p>
+        </div>
+        <div class="md-team" style="margin-top: 30px;">
+          <blockquote class="twitter-tweet" data-lang="es"><p lang="es" dir="ltr">Equipo Frecuencia inversa desafio <a href="https://twitter.com/hashtag/EarthRightNow?src=hash">#EarthRightNow</a> <a href="https://twitter.com/hashtag/Aircheck?src=hash">#Aircheck</a> <a href="https://twitter.com/spaceapps">@spaceapps</a> <a href="https://twitter.com/PoloTecRos">@PoloTecRos</a> <a href="https://twitter.com/innovacionmr">@innovacionmr</a> <a href="https://t.co/FbkvExXpml">pic.twitter.com/FbkvExXpml</a></p>&mdash; SpaceAppsRosario (@SpaceAppsRos) <a href="https://twitter.com/SpaceAppsRos/status/723933889522196480">23 de abril de 2016</a></blockquote>
+        </div>
+      </div>
     </div>
   </div>
 
 	<!-- Resources -->
 	<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="resources/js/jquery-2.2.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5aNOZvuu7PhTxBBoIxIMUS8TRgk_NtAc"></script>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/css/chartist.min.css">
 	<script src="resources/js/main.js"></script>
 </body>
 </html>
