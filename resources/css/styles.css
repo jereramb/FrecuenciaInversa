@@ -37,12 +37,51 @@ html, body{
 	background-position: center;
 }
 
+#md-group p{
+	margin-left: 15px;
+}
+
+#md-pdf{
+	background: #43a047;
+	border-radius: 3px;
+	color: #FFF;
+	margin: 20px auto;
+	text-align: center;
+	padding: 5px;
+	width: 100px;
+}
+
+#md-pdf:active{
+	background: #a5d6a7;
+	text-decoration: none;
+}
+
+#md-pdf:hover{
+	background: #2e7d32;
+	box-shadow: 1px 0px 15px 0px rgba(255, 255, 255, 0.75);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#md-pdf > a{
+	color: #FFF !important;
+	text-decoration: none;
+}
+
+#md-pdf > a:visited{
+	text-decoration: none;
+}
+
+#md-pdf > a:focus{
+	text-decoration: none;
+}
+
 #md-video{
 	background: #4CAF50;
 	padding: 15vh 0;
 }
 
-#md-video > div{
+#md-youtube{
 	height: 70vh;
 	margin: 0 auto;
 	width: 70vw;
