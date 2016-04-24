@@ -38,6 +38,12 @@ $(document).ready(function(){
 
 	$("#SendInfo").on('click', submitInfo);
 
+	//initCarousel();
+	$('#md-youtube').unslider({
+		autoplay: true,
+		arrow: false
+	});
+
 	new Chartist.Line('.md-chart', {
 		labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61],
 		series: [[ 0.47884, 0.49799, 0.5363, 0.68953, 0.55545, 0.47884, 0.43096, 0.38307, 0.3735, 0.06704, -0.3735, -0.07661, 0.60334, 1.01514, 1.28329, 1.39821, 1.06303, 0.64165, 0.38307, 0.05746, 0.1245, 0.34477, 0.63207, 0.6608, 0.62249, 0.51715, 0.69911, 0.71826, 0.67038, 0.05746, 0.10534, 0.5363, 1.15879, 0.97683, 0.62249, 0.33519, 0.17238, 0.10534, 0.19154, 0.3735, 0.82361, 0.82361, 0.71826, 0.52672, 0.49799, 0.58419, 0.63207, 0.64165, 0.56503, 0.55545, 0.48842, 0.43096, 0.33519, 0.33519, 0.34477, 0.36392, 0.40223, 0.4118, 0.43096, 0.45011, 0.47884, 0.48842]]
@@ -88,3 +94,46 @@ function submitInfo(e) {
 		alert("Faltan datos por seleccionar");
 	}
 }
+
+/*
+function initCarousel() {
+	var options = {
+	    $FillMode: 2,
+	    $AutoPlay: true,
+	    $Idle: 4000,
+	    $PauseOnHover: 1,
+	    $ArrowKeyNavigation: true,
+	    $SlideEasing: $JssorEasing$.$EaseOutQuint,
+	    $SlideDuration: 800,
+	    $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+	                    //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+	                    //$SlideHeight: 300,
+	    $SlideSpacing: 0,
+	    $Cols: 1,
+	    $ParkingPosition: 0,
+	    $UISearchMode: 1,
+	    $PlayOrientation: 1,
+	    $DragOrientation: 1,
+
+	    $BulletNavigatorOptions: {
+	    $Class: $JssorBulletNavigator$,
+	    $ChanceToShow: 2,
+	    $AutoCenter: 1,
+	    $Steps: 1,
+	    $Rows: 1,
+	    $SpacingX: 8,
+	    $SpacingY: 8,
+	    $Orientation: 1,
+	    $Scale: false
+	    },
+
+	    $ArrowNavigatorOptions: {
+	        $Class: $JssorArrowNavigator$,
+	        $ChanceToShow: 1,
+	        $AutoCenter: 2,
+	        $Steps: 1
+	    }
+	};
+
+	var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+}*/

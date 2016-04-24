@@ -128,6 +128,21 @@ html, body{
 	width: 100%;
 }
 
+#md-youtube ul{
+	height: 100%;
+}
+
+#md-youtube li{
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	height: 100% !important;
+}
+
+.unslider-arrow, .unslider-nav{
+	display: none;
+}
+
 @media (min-width: 1000px){
 	.container{
 		width: 80%;
