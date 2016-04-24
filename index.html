@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NASA App Challenge</title>
+	<link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body>
+	<div id="md-background" class="full-page">
+		<div class="md-title">
+			Frecuencia Inversa
+		</div>
+	</div>
+	<div id="md-video" class="full-page">
+		<div>
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/m_M3VEQmieQ" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div id="fi-form" class="full-page">
+		<div class="container">
+			<h1 class="page-header">¡Ingresa tus datos para mejorar la salud del mundo! <br> <small>Es anonimo y muy simple</small></h1>
+			<div class="panel panel-default">
+				<div class="panel-heading">Completa con tus datos</div>
+				<div class="panel-body">
+  					<div class="form-group">
+  						<label>Edad</label>
+  						<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+								Edad
+								<span class="caret"></span>
+							</button>
+							<ul id="edadDropdown" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">0-9</a></li>
+								<li><a href="#">10-19</a></li>
+								<li><a href="#">20-29</a></li>
+								<li><a href="#">30-39</a></li>
+								<li><a href="#">40-49</a></li>
+								<li><a href="#">50-59</a></li>
+								<li><a href="#">60-69</a></li>
+								<li><a href="#">70-79</a></li>
+								<li><a href="#">80-89</a></li>
+								<li><a href="#">90+</a></li>
+							</ul>
+						</div>
+  					</div>
+  					<div class="form-group">
+  						<label>Sexo</label>
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios1" id="optionsRadiosHombre" value="optionHombre" checked="" type="radio">Masculino
+  							</label>
+  						</div>  						
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios1" id="optionsRadiosMujer" value="optionMujer" checked="" type="radio">Femenino
+  							</label>
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<label>Elige una ciudad</label>
+  						<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+								Ciudad
+								<span class="caret"></span>
+							</button>
+							<ul id="ciudadDropdown" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+								<li><a href="#">Rosario</a></li>
+								<li><a href="#">San Pablo</a></li>
+								<li><a href="#">Paris</a></li>
+								<li><a href="#">Tokio</a></li>
+								<li><a href="#">Moscú</a></li>
+								<li><a href="#">New York</a></li>
+								<li><a href="#">Sidney</a></li>
+								<li><a href="#">Berlin</a></li>
+								<li><a href="#">Johannesburgo</a></li>
+							</ul>
+						</div>
+  					</div>
+  					<div class="form-group">
+  						<label>¿Tienes antecedentes personales fisiologicos y/o patologicos?</label>
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios2" id="optionsRadiosAntSi" value="optionAntSi" checked="" type="radio">Si
+  							</label>
+  						</div>  						
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios2" id="optionsRadiosAntNo" value="optionAntNo" checked="" type="radio">No
+  							</label>
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<label>¿Es alergico a alguna enfermedad?</label>
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios3" id="optionsRadiosAlergicoSi" value="optionAlergicoSi" checked="" type="radio">Si
+  							</label>
+  						</div>  						
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios3" id="optionsRadiosAlergicoNo" value="optionAlergicoNo" checked="" type="radio">No
+  							</label>
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<label>¿Consume tabaco?</label>
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios4" id="optionsRadiosTabacoSi" value="optionTabacoSi" checked="" type="radio">Si
+  							</label>
+  						</div>  						
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios4" id="optionsRadiosTabacoNo" value="optionTabacoNo" checked="" type="radio">No
+  							</label>
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<label>¿Su hogar se encuentra en condiciones sanitarias optimas?</label>
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios5" id="optionsRadiosHogarSi" value="optionHogarSi" checked="" type="radio">Si
+  							</label>
+  						</div>  						
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios5" id="optionsRadiosHogarNo" value="optionHogarNo" checked="" type="radio">No
+  							</label>
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<label>¿Hace actividad fisica de manera regular?</label>
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios6" id="optionsRadiosFisicaSi" value="optionFisicaSi" checked="" type="radio">Si
+  							</label>
+  						</div>  						
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios6" id="optionsRadiosFisicaNo" value="optionFisicaNo" checked="" type="radio">No
+  							</label>
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<label>¿Es asmatico?</label>
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios7" id="optionsRadiosAsmaSi" value="optionAsmaSi" checked="" type="radio">Si
+  							</label>
+  						</div>  						
+  						<div class="radio">
+  							<label>
+  								<input name="optionsRadios7" id="optionsRadiosAsmaNo" value="optionAsmaNo" checked="" type="radio">No
+  							</label>
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<button id="SendInfo" type="button" class="btn btn-primary">Enviar</button>
+  					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="full-page" style="background: #29B6F6; padding: 10vh 0; height: auto;">
+		<div id="map" class="container"></div>
+	</div>
+	<div id="md-est" class="full-page" style="background: #673AB7">
+		<div id="md-app" class="container">
+			<div class="md-app-item">
+				<img src="resources/images/Tosimetro.jpg" alt="Tosimetro">
+			</div>
+			<div class="md-app-item">
+				<p style="width: 100%; text-align: center;font-size: 32px;color: #FFF">Baja nuestra App desde el Play Store!</p>
+				<div style="height: 220px; width: 220px; margin: 0 auto;">
+					<img src="resources/images/GooglePlay.png" alt="Google Play">
+					<button class="btn btn-default" style="margin-left: 30%;">Descargar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Resources -->
+	<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="resources/js/jquery-2.2.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5aNOZvuu7PhTxBBoIxIMUS8TRgk_NtAc"></script>
+	<script src="resources/js/main.js"></script>
+</body>
+</html>
